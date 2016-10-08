@@ -1,0 +1,22 @@
+{
+  "name": "youlin_app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/despire1119/react-webpack.git"
+  },
+  "keywords": [
+    "youlin"
+  ],
+  "author": "MrW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/despire1119/react-webpack/issues"
+  },
+  "homepage": "https://github.com/despire1119/react-webpack#readme"
+}
