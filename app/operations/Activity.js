@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
+import {connect} from 'react-redux'
 // import '../assets/sass/greeter.scss'
 
-class Greeter extends Component{
+class Activity extends Component{
     render() {
         return (
             <div>
-                隔壁老王么么哒
+                我是活动
             </div>
         );
     }
 }
 
-export default Greeter
+export default connect()(Activity)
