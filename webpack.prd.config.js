@@ -3,7 +3,6 @@ var config = require('./webpack.base.config.js')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-config.devtool = '#source-map'
 
 config.output.publicPath='/'
 

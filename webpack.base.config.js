@@ -6,7 +6,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 // var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
-  devtool: 'eval-source-map',
   entry: path.resolve(__dirname,"app/main.js"),
   // output: {
   //  path: path.resolve(__dirname,"build"),
@@ -33,7 +32,8 @@ module.exports = {
 		  {
               test: /\.js$/,
               exclude: /node_modules/,
-              loader: 'babel'
+              loader: 'babel',
+              exclude: './node_modules/'
           },
 		  {
               test: /\.scss$/,
