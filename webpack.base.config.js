@@ -6,6 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 // var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
+  devtool: 'eval-source-map',
   entry: path.resolve(__dirname,"app/main.js"),
   // output: {
   //  path: path.resolve(__dirname,"build"),
@@ -15,16 +16,14 @@ module.exports = {
       path: path.resolve(__dirname, 'dist/app/assets'),
       filename: '[name].[hash].js',
   },
-  resolve: {
-      //自动扩展文件后缀名，require时可以不再写后缀名
-      extensions: ['', '.js', '.scss', '.css'],
-      //模块定义别名，方便后续直接引用，无需多写路径
-      alias: {
-          'src': path.resolve(__dirname, './src'),
-          'components': path.resolve(__dirname, './components'),
-          'sass': path.resolve(__dirname, './src/assets/sass'),
-      }
-  },
+  // resolve: {
+  //     extensions: ['', '.js', '.scss', '.css'],
+  //     alias: {
+  //         'src': path.resolve(__dirname, './src'),
+  //         'components': path.resolve(__dirname, './src/components'),
+  //         'sass': path.resolve(__dirname, './src/assets/sass'),
+  //     }
+  // },
   module: {
 	  loaders: [
 		  {
@@ -34,8 +33,7 @@ module.exports = {
 		  {
               test: /\.js$/,
               exclude: /node_modules/,
-              loader: 'babel',
-              exclude: './node_modules/'
+              loader: 'babel'
           },
 		  {
               test: /\.scss$/,

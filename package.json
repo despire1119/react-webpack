@@ -5,7 +5,7 @@
   "contributors": "Youlin_front",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --inline --hot --port 8989 --host 0.0.0.0 --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --progress --inline --hot --port 8889 --host 0.0.0.0 --config webpack.dev.config.js",
     "build": "rm -rf dist&&webpack --progress --hide-modules --config webpack.prd.config.js"
   },
   "repository": {
